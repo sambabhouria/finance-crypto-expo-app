@@ -1,0 +1,70 @@
+# Welcome to your Expo app 👋
+
+👋 Good Link 👋
+
+# https://styled-components.com/docs/basics
+
+# NativeWind
+
+## https://www.nativewind.dev/
+
+## https://www.nativewind.dev/v4/core-concepts/functions-and-directives
+
+# Styled components : https://styled-components.com/docs/basics
+
+# zustand await : https://refine.dev/blog/zustand-react-state/#build-a-to-do-app-using-zustand
+
+# https://medium.com/@joris.l/tutorial-zustand-a-simple-and-powerful-state-management-solution-9ad4d06d5334
+
+# https://medium.com/@giwon.yi339/react-persistant-login-using-zustand-state-management-prevent-ui-change-on-refreshing-the-page-4ec53fe8ce5e (login)
+
+# https://supabase.com/docs/reference/javascript/auth-getuser (docs)
+
+# supabe github : https://github.com/supabase/supabase/blob/master/apps/docs/content/guides/auth.mdx
+
+# https://supabase.com/docs/reference/javascript/using-filters
+
+# https://supabase.com/docs/reference/javascript/update
+
+# type ionics: https://gist.github.com/aliemir/a5c283f6034735eb3352de361dd678db
+
+# https://nocodegarden.io/blog/creating-user-profiles-on-sign-up-in-supabase
+
+# https://supabase.com/docs/reference/javascript/installing
+
+# https://supabase.com/docs/reference/javascript/auth-signup
+
+# https://supabase.com/docs/reference/javascript/storage-createbucket
+
+# CREATING TABLE : https://nocodegarden.io/docs/supabase/quickstart
+
+# https://nocodegarden.io/blog/creating-user-profiles-on-sign-up-in-supabase
+
+# Creating user profile on user loggin : https://nocodegarden.io/blog/creating-user-profiles-on-sign-up-in-supabase
+
+# https://www.restack.io/docs/supabase-knowledge-supabase-insert-tutorial
+
+LOG 🚀 ~ useEffect ~ session: 35e5bc8e-df3e-4d82-8610-b10cce7d5f89
+
+# navigation type script : https://betterprogramming.pub/react-navigation-with-typescript-fa7805f52ab0
+
+import { useNavigation, ParamListBase, NavigationProp } from '@react-navigation/native';
+const navigation: NavigationProp<ParamListBase> = useNavigation();
+
+================================================================
+type ParamList = {
+Home: { foo: string; onBar: () => void };
+About: { bar: string; onBaz: () => void };
+Undefined: undefined,
+};
+
+type Check<T extends keyof ParamList> = undefined extends ParamList[T] ? 'might be undefined' : 'can not be undefined'
+
+type Result = Check<'Home'> // "can not be undefined"
+type Result2 = Check<'Undefined'> // "might be undefined"
+
+As you might have noticed, if you provide Home TS will require two arguments because ParamList['Home'] returns an object which can not be undefined.
+
+On the other hand, undefined extends ParamList['Undefined'] - hence TS allows you to use only one argument.
+
+# That's why TS does not allow you to pass only one argument.
